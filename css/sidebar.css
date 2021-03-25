@@ -65,3 +65,9 @@
 .nav-icon {
   margin: 0 1rem;
 }
+.nav-item a {
+  color: #828282;
+}
+.nav-item.selected a {
+  color: #ffaf13 !important;
+}
