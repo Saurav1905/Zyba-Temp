@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="generator" content="Hugo 0.80.0" />
+    <title>Zyba Partner</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="../dashboard.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
+
+    <link href="../css/sidebar.css" rel="stylesheet" />
+    <link href="../css/report.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="navbar sticky-top flex-md-nowrap p-0">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"
+        ><img src="../assets/zyba.png" alt=""
+      /></a>
+      <!-- <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+      <div class="w-45 nav-content">
+        <img
+          style="position: relative; left: 30px"
+          src="../assets/search.svg"
+          alt=""
+        />
+        <input
+          class="form-control search"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+          style="padding-left: 1rem"
+        />
+        <ul class="navbar-nav px-3">
+          <li class="nav-item flex-wrap text-nowrap">
+            <a class="nav-link hover" href="#">
+              <img src="../assets/all-bookings.svg" alt="" />
+              <span
+                style="
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 21px;
+
+                  /* identical to box height */
+
+                  /* Gray 1 */
+                  color: #333333;
+                  padding: 0 0.5rem;
+                "
+                >All Bookings</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+        >
+          <div class="position-sticky pt-3">
+            <div class="salon-info">
+              <div class="salon-name">Test Unisex Salon</div>
+              <div class="availibility">
+                <img src="../assets/available.svg" alt="" />
+                Available
+              </div>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <span class="nav-icon"
+                    ><img src="../assets/tabicons/Dark-Tab-icon1.svg" alt=""
+                  /></span>
+                  Booking
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  onclick="setReportActive()"
+                >
+                  <span class="nav-icon"
+                    ><img src="../assets/tabicons/Light-Tab-icon2.svg" alt=""
+                  /></span>
+                  Reports
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <ul class="report-nav-list">
+                    <li class="nav-item">
+                      <a style="color: #828282 !important" href="./sales.html"
+                        >Sales</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a style="color: #828282 !important" href="./emp.html"
+                        >Employees</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a style="color: #828282 !important" href="./service.html"
+                        >Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./empfull.html">
+                  <span class="nav-icon"
+                    ><img src="../assets/tabicons/Dark-Tab-icon3.svg" alt=""
+                  /></span>
+                  Employees
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ratecard.html">
+                  <span class="nav-icon"
+                    ><img src="../assets/tabicons/Dark-Tab-icon4.svg" alt=""
+                  /></span>
+                  Rate Card
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div>
+            <div class="booking-heading">
+              <div class="booking-heading-text">
+                service - absolute vs revenue
+              </div>
+            </div>
+            <table class="table-borderless full-table">
+              <thead>
+                <tr>
+                  <th scope="col">Customer Name</th>
+                  <th scope="col">Service</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rohan Arora</td>
+                  <td>Keratine Smooth Treatement</td>
+                  <td>@9th Feb 2021<br />6:30 PM</td>
+                  <td>₹300</td>
+                  <td>
+                    <button type="button" class="btn btn-light">Show ></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rohan Arora</td>
+                  <td>Keratine Smooth Treatement</td>
+                  <td>@9th Feb 2021<br />6:30 PM</td>
+                  <td>₹300</td>
+                  <td>
+                    <button type="button" class="btn btn-light">Show ></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rohan Arora</td>
+                  <td>Keratine Smooth Treatement</td>
+                  <td>@9th Feb 2021<br />6:30 PM</td>
+                  <td>₹300</td>
+                  <td>
+                    <button type="button" class="btn btn-light">Show ></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <div class="booking-heading">
+              <div class="booking-heading-text">
+                Service distribution by sex
+              </div>
+            </div>
+            <table class="table-borderless full-table">
+              <thead>
+                <tr>
+                  <th scope="col">Customer Name</th>
+                  <th scope="col">Service</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rohan Arora</td>
+                  <td>Keratine Smooth Treatement</td>
+                  <td>@9th Feb 2021<br />6:30 PM</td>
+                  <td>₹300</td>
+                  <td>
+                    <button type="button" class="btn btn-light">Show ></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rohan Arora</td>
+                  <td>Keratine Smooth Treatement</td>
+                  <td>@9th Feb 2021<br />6:30 PM</td>
+                  <td>₹300</td>
+                  <td>
+                    <button type="button" class="btn btn-light">Show ></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rohan Arora</td>
+                  <td>Keratine Smooth Treatement</td>
+                  <td>@9th Feb 2021<br />6:30 PM</td>
+                  <td>₹300</td>
+                  <td>
+                    <button type="button" class="btn btn-light">Show ></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div class="add-btn">
+      <img src="../assets/plus.svg" alt="" />
+    </div>
+
+    <script src="../sidebar.js"></script>
+  </body>
+</html>

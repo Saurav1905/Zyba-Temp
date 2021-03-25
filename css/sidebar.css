@@ -1,0 +1,67 @@
+.salon-info {
+  margin: 36px;
+}
+
+.salon-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  /* Gray 1 */
+  color: #333333;
+}
+
+.availibility {
+  margin: 0.5rem 0;
+  width: min-content;
+  padding: 4px 8px;
+
+  white-space: nowrap;
+
+  /* Green 1 */
+  border: 1px solid #219653;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height */
+
+  /* Green 1 */
+  color: #219653;
+}
+
+.nav-link {
+  font-weight: bold !important;
+  font-size: 14px;
+  line-height: 18px;
+
+  height: 40px;
+
+  /* Gray 2 */
+  color: #4f4f4f !important;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  width: 170px;
+  background: #ffaf13;
+  border-radius: 0px 48px 48px 0px !important;
+  border-top-right-radius: 48px !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* Gray 6 */
+  color: #f2f2f2 !important;
+}
+
+.nav-icon {
+  margin: 0 1rem;
+}
