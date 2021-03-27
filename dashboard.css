@@ -271,7 +271,25 @@ td {
 
   cursor: pointer;
 }
+#show-booking-modal-container {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  gap: 1rem;
+  display: flex;
+  display: none;
+}
 
+.sub-modal {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
 .my-modal {
   position: fixed;
   top: 25%;

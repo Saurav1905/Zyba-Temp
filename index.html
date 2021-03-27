@@ -445,8 +445,11 @@
     </div>
     <!-- new booking modal -->
     <div id="new-booking-modal" class="my-modal">
-      <div style="margin-top: 0" class="booking-heading modal-heading">
-        <div class="booking-heading-text">New bookings</div>
+      <div class="modal-top-container">
+        <div style="margin-top: 0" class="booking-heading modal-heading">
+          <div class="booking-heading-text">New bookings</div>
+        </div>
+        <div class="actual-close-btn close-btn">CLOSE</div>
       </div>
       <input
         type="tel"
@@ -521,233 +524,244 @@
       >
         Continue
       </button>
-      <div class="close-btn" style="align-self: center">CLOSE</div>
     </div>
-
-    <!-- booking modal -->
-    <div
-      id="show-booking-modal"
-      class="my-modal billing-modal"
-      style="padding-right: 0"
-    >
-      <div style="width: 100%; margin-bottom: 24px" class="spaced-row">
-        <div class="col">
-          <div class="spaced-row" style="width: 90%">
-            <div class="modal-name">Rohan Arora</div>
-            <div class="close-btn">CLOSE</div>
-          </div>
-          <div class="spaced-row" style="width: 90%">
-            <div>
-              <img src="../assets/phone.svg" alt="" /><span
-                style="
-                  font-weight: normal;
-                  font-size: 10px;
-                  line-height: 13px;
-
-                  /* Gray 1 */
-                  color: #333333;
-                  margin-left: 8px;
-                "
-              >
-                8717900010
-              </span>
-            </div>
-            <div
-              style="
-                background: rgba(255, 175, 19, 0.25);
-                border-radius: 4px;
-                display: flex;
-                justify-content: center;
-                padding: 6px;
-              "
-            >
-              <img src="../assets/calendar.svg" alt="" /><span
-                style="
-                  font-weight: 500;
-                  font-size: 10px;
-                  line-height: 13px;
-
-                  /* identical to box height */
-                  display: flex;
-                  align-items: center;
-
-                  /* Gray 1 */
-                  color: #333333;
-
-                  /* Inside Auto Layout */
-                  flex: none;
-                  order: 1;
-                  flex-grow: 0;
-                  margin: 0px 8px;
-                "
-              >
-                Customer History
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <table
-        style="
-          margin: 0;
-          padding: 0;
-          padding: 0 !important;
-          border-bottom: 1px solid #f2f2f2;
-        "
-        class="table-borderless full-table"
-      >
-        <thead>
-          <tr>
-            <th class="red-text" scope="col">Booking #</th>
-            <th class="red-text" scope="col">Booking Date</th>
-            <th class="red-text" scope="col">Booking Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 16px 0; font-weight: 400">005-2021020962</td>
-            <td style="padding: 16px 0; font-weight: 400">10 Feb 2021</td>
-            <td style="white-space: nowrap; padding: 16px 0; font-weight: 400">
-              10:00 AM - 10:30 AM
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table
-        style="margin: 0; margin-top: 8px; padding: 0"
-        class="table-borderless full-table"
-      >
-        <thead>
-          <tr>
-            <th class="red-text" scope="col" style="width: 142px">
-              Service name
-            </th>
-            <th class="red-text" scope="col" style="width: 142px">Staff</th>
-            <th class="red-text" scope="col">ACTION</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 15px 0 8px 0; font-weight: 400">
-              Keratine Smooth Treatement
-            </td>
-            <td style="padding: 15px 0 8px 0; font-weight: 400">
-              <button
-                type="button"
-                class="btn btn-outline-primary choose-time-btn"
-                onclick="chooseProfModal()"
-              >
-                Choose Time
-              </button>
-            </td>
-            <td
-              style="
-                padding: 15px 0 8px 0;
-                text-align: center;
-                font-size: 8px;
-                line-height: 10px;
-              "
-              class="spaced-row"
-            >
-              <div style="margin: 0.5rem">
-                <img
-                  style="margin-bottom: 3px"
-                  src="./assets/charges.svg"
-                  alt=""
-                />
-                Charges
-              </div>
-              <div
-                style="
-                  margin: 0.5rem;
-                  text-align: center;
-                  font-size: 8px;
-                  line-height: 10px;
-                "
-              >
-                <img
-                  style="margin-bottom: 3px"
-                  src="./assets/time.svg"
-                  alt=""
-                />
-                Time
-              </div>
-              <div
-                style="
-                  margin: 0.5rem;
-                  text-align: center;
-                  font-size: 8px;
-                  line-height: 10px;
-                "
-              >
-                <img
-                  style="margin-bottom: 3px"
-                  src="./assets/remove.svg"
-                  alt=""
-                />
-                Remove
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <button
-        style="margin-bottom: 1rem"
-        type="button"
-        class="btn btn-outline-primary add-a-service"
-      >
-        <img src="./assets/plus-circle.svg" alt="" />
-        ADD A SERVICE
-      </button>
-
+    <div id="show-booking-modal-container">
+      <!-- booking modal -->
       <div
-        style="width: 90%; margin-bottom: 8px; border-bottom: 1px solid #f2f2f2"
+        id="show-booking-modal"
+        class="sub-modal billing-modal"
+        style="padding-right: 0"
       >
-        <div class="spaced-row" style="margin-bottom: 8px">
-          <div class="bill-text">Service Total</div>
-          <div class="bill-cost">₹1000</div>
-        </div>
+        <div style="width: 100%; margin-bottom: 24px" class="spaced-row">
+          <div class="col">
+            <div class="spaced-row" style="width: 90%">
+              <div class="modal-name">Rohan Arora</div>
+              <div class="actual-close-btn close-btn">CLOSE</div>
+            </div>
+            <div class="spaced-row" style="width: 90%">
+              <div>
+                <img src="../assets/phone.svg" alt="" /><span
+                  style="
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 13px;
 
-        <div class="spaced-row" style="margin-bottom: 8px">
-          <div class="bill-text">Tax Total</div>
-          <div class="bill-cost">₹0</div>
-        </div>
-      </div>
-      <div class="spaced-row" style="width: 90%">
-        <div class="bill-amount">Amount</div>
-        <div class="bill-final">₹1000</div>
-      </div>
+                    /* Gray 1 */
+                    color: #333333;
+                    margin-left: 8px;
+                  "
+                >
+                  8717900010
+                </span>
+              </div>
+              <div
+                class="customer-history-btn"
+                style="
+                  background: rgba(255, 175, 19, 0.25);
+                  border-radius: 4px;
+                  display: flex;
+                  justify-content: center;
+                  padding: 6px;
+                "
+              >
+                <img src="../assets/calendar.svg" alt="" /><span
+                  style="
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 13px;
 
-      <div class="spaced-row">
+                    /* identical to box height */
+                    display: flex;
+                    align-items: center;
+
+                    /* Gray 1 */
+                    color: #333333;
+
+                    /* Inside Auto Layout */
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                    margin: 0px 8px;
+                  "
+                >
+                  Customer History
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
         <table
-          style="margin: 0; padding: 0; padding: 0 !important; margin-top: 35px"
+          style="
+            margin: 0;
+            padding: 0;
+            padding: 0 !important;
+            border-bottom: 1px solid #f2f2f2;
+          "
           class="table-borderless full-table"
         >
           <thead>
             <tr>
-              <th class="red-text" scope="col">ONLINE PAID</th>
-              <!-- <th class="red-text" scope="col">TO BE COLLECTED</th> -->
+              <th class="red-text" scope="col">Booking #</th>
+              <th class="red-text" scope="col">Booking Date</th>
+              <th class="red-text" scope="col">Booking Time</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="margin-top: 8px !important">
+            <tr>
+              <td style="padding: 16px 0; font-weight: 400">005-2021020962</td>
+              <td style="padding: 16px 0; font-weight: 400">10 Feb 2021</td>
+              <td
+                style="white-space: nowrap; padding: 16px 0; font-weight: 400"
+              >
+                10:00 AM - 10:30 AM
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table
+          style="margin: 0; margin-top: 8px; padding: 0"
+          class="table-borderless full-table"
+        >
+          <thead>
+            <tr>
+              <th class="red-text" scope="col" style="width: 142px">
+                Service name
+              </th>
+              <th class="red-text" scope="col" style="width: 142px">Staff</th>
+              <th class="red-text" scope="col">ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 15px 0 8px 0; font-weight: 400">
+                Keratine Smooth Treatement
+              </td>
+              <td style="padding: 15px 0 8px 0; font-weight: 400">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary choose-time-btn"
+                  onclick="chooseProfModal()"
+                >
+                  Choose Time
+                </button>
+              </td>
               <td
                 style="
-                  font-weight: 400;
-                  font-size: 16px;
-                  line-height: 21px;
-
-                  /* Gray 1 */
-                  color: #333333;
-                  padding: 0;
-                  padding-top: 16px !important;
+                  padding: 15px 0 8px 0;
+                  text-align: center;
+                  font-size: 8px;
+                  line-height: 10px;
                 "
+                class="spaced-row"
               >
-                ₹300
+                <div style="margin: 0.5rem">
+                  <img
+                    style="margin-bottom: 3px"
+                    src="./assets/charges.svg"
+                    alt=""
+                  />
+                  Charges
+                </div>
+                <div
+                  style="
+                    margin: 0.5rem;
+                    text-align: center;
+                    font-size: 8px;
+                    line-height: 10px;
+                  "
+                >
+                  <img
+                    style="margin-bottom: 3px"
+                    src="./assets/time.svg"
+                    alt=""
+                  />
+                  Time
+                </div>
+                <div
+                  style="
+                    margin: 0.5rem;
+                    text-align: center;
+                    font-size: 8px;
+                    line-height: 10px;
+                  "
+                >
+                  <img
+                    style="margin-bottom: 3px"
+                    src="./assets/remove.svg"
+                    alt=""
+                  />
+                  Remove
+                </div>
               </td>
-              <!-- <td
+            </tr>
+          </tbody>
+        </table>
+
+        <button
+          style="margin-bottom: 1rem"
+          type="button"
+          class="btn btn-outline-primary add-a-service"
+        >
+          <img src="./assets/plus-circle.svg" alt="" />
+          ADD A SERVICE
+        </button>
+
+        <div
+          style="
+            width: 90%;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #f2f2f2;
+          "
+        >
+          <div class="spaced-row" style="margin-bottom: 8px">
+            <div class="bill-text">Service Total</div>
+            <div class="bill-cost">₹1000</div>
+          </div>
+
+          <div class="spaced-row" style="margin-bottom: 8px">
+            <div class="bill-text">Tax Total</div>
+            <div class="bill-cost">₹0</div>
+          </div>
+        </div>
+        <div class="spaced-row" style="width: 90%">
+          <div class="bill-amount">Amount</div>
+          <div class="bill-final">₹1000</div>
+        </div>
+
+        <div class="spaced-row">
+          <table
+            style="
+              margin: 0;
+              padding: 0;
+              padding: 0 !important;
+              margin-top: 35px;
+            "
+            class="table-borderless full-table"
+          >
+            <thead>
+              <tr>
+                <th class="red-text" scope="col">ONLINE PAID</th>
+                <!-- <th class="red-text" scope="col">TO BE COLLECTED</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="margin-top: 8px !important">
+                <td
+                  style="
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 21px;
+
+                    /* Gray 1 */
+                    color: #333333;
+                    padding: 0;
+                    padding-top: 16px !important;
+                  "
+                >
+                  ₹300
+                </td>
+                <!-- <td
                 style="
                   background: rgba(33, 150, 83, 0.1);
                   border-radius: 8px;
@@ -761,9 +775,294 @@
               >
                 ₹700
               </td> -->
-            </tr>
-          </tbody>
-        </table>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            style="
+              background: rgba(33, 150, 83, 0.1);
+              border-radius: 8px;
+              padding: 8px;
+              align-self: baseline;
+              margin-bottom: 24px;
+              position: relative;
+              top: 28px;
+              white-space: nowrap;
+            "
+          >
+            <div style="margin-bottom: 12px" class="red-text">
+              LIFE TIME VALUE
+            </div>
+            <div class="green-text">₹700</div>
+          </div>
+          <button
+            style="white-space: nowrap"
+            type="button"
+            class="btn btn-outline-primary add-disc-btn"
+          >
+            Add Discount
+          </button>
+        </div>
+
+        <div style="width: 100%" class="spaced-row">
+          <button
+            style="
+              width: 50%;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0;
+              margin-top: 32px;
+              outline: none;
+              border: 0;
+            "
+            type="button"
+            class="btn btn-primary yellow-btn"
+          >
+            Create
+          </button>
+          <div
+            style="
+              width: 50%;
+              height: 40px;
+              text-align: center;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 18px;
+              margin-top: 32px;
+              text-transform: capitalize;
+            "
+            class="red-text"
+          >
+            Emergency Mode
+          </div>
+        </div>
+        <div
+          style="
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 10px;
+            line-height: 13px;
+            margin: 16px 0 0 0;
+            letter-spacing: 0.08em;
+          "
+          class="red-text"
+        >
+          ESCALATE TO TEAM ZYBA
+        </div>
+      </div>
+
+      <!-- choose prof modal -->
+      <div
+        style="width: 400px"
+        id="choose-prof-modal"
+        class="sub-modal choose-prof-modal"
+      >
+        <div style="width: 100%" class="spaced-row">
+          <div
+            style="padding: 4px 8px; margin: 0"
+            class="booking-heading modal-heading"
+          >
+            <div
+              style="margin-bottom: 0; padding: 0"
+              class="booking-heading-text"
+            >
+              Choose Professional and time
+            </div>
+          </div>
+          <div class="actual-close-btn close-btn">CLOSE</div>
+        </div>
+
+        <div style="width: 100%" class="spaced-row">
+          <div class="modal-heading" style="display: flex">
+            <img src="./assets/user.svg" alt="" />
+            <div class="booking-heading-text">Rohan Arora</div>
+          </div>
+          <div class="close-btn">TIMETABLE</div>
+        </div>
+        <div
+          class="btn-group"
+          role="group2"
+          aria-label="Basic example"
+          style="align-self: baseline"
+          baseline
+        >
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+        </div>
+        <div style="width: 100%" class="spaced-row">
+          <div class="modal-heading" style="display: flex">
+            <img src="./assets/user.svg" alt="" />
+            <div class="booking-heading-text">Rohan Arora</div>
+          </div>
+          <div class="close-btn">TIMETABLE</div>
+        </div>
+        <div
+          class="btn-group"
+          role="group2"
+          aria-label="Basic example"
+          style="align-self: baseline"
+        >
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+        </div>
+        <div style="width: 100%" class="spaced-row">
+          <div class="modal-heading" style="display: flex">
+            <img src="./assets/user.svg" alt="" />
+            <div class="booking-heading-text">Rohan Arora</div>
+          </div>
+          <div class="close-btn">TIMETABLE</div>
+        </div>
+        <div
+          class="btn-group"
+          role="group2"
+          aria-label="Basic example"
+          style="align-self: baseline"
+        >
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+        </div>
+      </div>
+
+      <!-- history modal -->
+      <div
+        style="max-width: 400px"
+        id="history-modal"
+        class="sub-modal choose-prof-modal"
+      >
+        <div style="width: 100%; margin-bottom: 1rem" class="spaced-row">
+          <div
+            style="padding: 4px 8px; margin: 0"
+            class="booking-heading modal-heading"
+          >
+            <div
+              style="margin-bottom: 0; padding: 0"
+              class="booking-heading-text"
+            >
+              CUSTOMER HISTORY
+            </div>
+          </div>
+          <div class="actual-close-btn close-btn">CLOSE</div>
+        </div>
+
         <div
           style="
             background: rgba(33, 150, 83, 0.1);
@@ -771,407 +1070,122 @@
             padding: 8px;
             align-self: baseline;
             margin-bottom: 24px;
-            position: relative;
-            top: 28px;
-            white-space: nowrap;
           "
         >
-          <div style="margin-bottom: 12px" class="red-text">
-            LIFE TIME VALUE
-          </div>
+          <div class="red-text">LIFE TIME VALUE</div>
           <div class="green-text">₹700</div>
         </div>
-        <button
-          style="white-space: nowrap"
-          type="button"
-          class="btn btn-outline-primary add-disc-btn"
-        >
-          Add Discount
-        </button>
-      </div>
 
-      <div style="width: 100%" class="spaced-row">
-        <button
-          style="
-            width: 50%;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            margin-top: 32px;
-            outline: none;
-            border: 0;
-          "
-          type="button"
-          class="btn btn-primary yellow-btn"
-        >
-          Create
-        </button>
-        <div
-          style="
-            width: 50%;
-            height: 40px;
-            text-align: center;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            margin-top: 32px;
-            text-transform: capitalize;
-          "
-          class="red-text"
-        >
-          Emergency Mode
-        </div>
-      </div>
-      <div
-        style="
-          width: 100%;
-          text-align: center;
-          cursor: pointer;
-          text-decoration: underline;
-          font-size: 10px;
-          line-height: 13px;
-          margin: 16px 0 0 0;
-          letter-spacing: 0.08em;
-        "
-        class="red-text"
-      >
-        ESCALATE TO TEAM ZYBA
-      </div>
-    </div>
-
-    <!-- choose prof modal -->
-    <div
-      style="width: 400px"
-      id="choose-prof-modal"
-      class="my-modal choose-prof-modal"
-    >
-      <div style="width: 100%" class="spaced-row">
-        <div
-          style="padding: 4px 8px; margin: 0"
-          class="booking-heading modal-heading"
-        >
-          <div
-            style="margin-bottom: 0; padding: 0"
-            class="booking-heading-text"
-          >
-            Choose Professional and time
-          </div>
-        </div>
-        <div class="close-btn">CLOSE</div>
-      </div>
-
-      <div style="width: 100%" class="spaced-row">
-        <div class="modal-heading" style="display: flex">
-          <img src="./assets/user.svg" alt="" />
-          <div class="booking-heading-text">Rohan Arora</div>
-        </div>
-        <div class="close-btn">TIMETABLE</div>
-      </div>
-      <div
-        class="btn-group"
-        role="group2"
-        aria-label="Basic example"
-        style="align-self: baseline"
-        baseline
-      >
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-      </div>
-      <div style="width: 100%" class="spaced-row">
-        <div class="modal-heading" style="display: flex">
-          <img src="./assets/user.svg" alt="" />
-          <div class="booking-heading-text">Rohan Arora</div>
-        </div>
-        <div class="close-btn">TIMETABLE</div>
-      </div>
-      <div
-        class="btn-group"
-        role="group2"
-        aria-label="Basic example"
-        style="align-self: baseline"
-      >
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-      </div>
-      <div style="width: 100%" class="spaced-row">
-        <div class="modal-heading" style="display: flex">
-          <img src="./assets/user.svg" alt="" />
-          <div class="booking-heading-text">Rohan Arora</div>
-        </div>
-        <div class="close-btn">TIMETABLE</div>
-      </div>
-      <div
-        class="btn-group"
-        role="group2"
-        aria-label="Basic example"
-        style="align-self: baseline"
-      >
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-        <button
-          style="
-            width: 104px;
-            height: 38px;
-            margin: 0;
-            margin-right: 8px;
-            white-space: nowrap;
-          "
-          type="button"
-          class="btn btn-outline-primary time-btn"
-        >
-          06:00 PM
-        </button>
-      </div>
-    </div>
-
-    <!-- history modal -->
-    <div
-      style="max-width: 400px"
-      id="history-modal"
-      class="my-modal choose-prof-modal"
-    >
-      <div style="width: 100%; margin-bottom: 1rem" class="spaced-row">
-        <div
-          style="padding: 4px 8px; margin: 0"
-          class="booking-heading modal-heading"
-        >
-          <div
-            style="margin-bottom: 0; padding: 0"
-            class="booking-heading-text"
-          >
-            CUSTOMER HISTORY
-          </div>
-        </div>
-        <div class="close-btn">CLOSE</div>
-      </div>
-
-      <div
-        style="
-          background: rgba(33, 150, 83, 0.1);
-          border-radius: 8px;
-          padding: 8px;
-          align-self: baseline;
-          margin-bottom: 24px;
-        "
-      >
-        <div class="red-text">LIFE TIME VALUE</div>
-        <div class="green-text">₹700</div>
-      </div>
-
-      <div>
-        <div class="red-text">LAST 5 BOOKINGS</div>
-        <div class="booking-card">
-          <div class="spaced-row">
-            <div class="close-row">
-              <div class="serial-no">1.</div>
-              <div class="booking-id">008-202101220090</div>
+        <div>
+          <div class="red-text">LAST 5 BOOKINGS</div>
+          <div class="booking-card">
+            <div class="spaced-row">
+              <div class="close-row">
+                <div class="serial-no">1.</div>
+                <div class="booking-id">008-202101220090</div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <div class="day">24 days ago</div>
+                <div class="date">22 January 2021</div>
+              </div>
+            </div>
+            <div class="spaced-row" style="margin-left: 2rem; margin-top: 8px">
+              <div class="service">Keratine Smooth Treatement</div>
+              <div class="cost">₹2499.00</div>
             </div>
             <div
               style="
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                margin-bottom: 0.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 12px;
+                margin-left: 2rem;
+                margin-top: 8px;
               "
+              class="spaced-row"
             >
-              <div class="day">24 days ago</div>
-              <div class="date">22 January 2021</div>
+              <div class="small-green-text">Total</div>
+              <div class="small-green-text">₹2499.00</div>
             </div>
           </div>
-          <div class="spaced-row" style="margin-left: 2rem; margin-top: 8px">
-            <div class="service">Keratine Smooth Treatement</div>
-            <div class="cost">₹2499.00</div>
-          </div>
-          <div
-            style="
-              margin-top: 0.5rem;
-              margin-bottom: 12px;
-              margin-left: 2rem;
-              margin-top: 8px;
-            "
-            class="spaced-row"
-          >
-            <div class="small-green-text">Total</div>
-            <div class="small-green-text">₹2499.00</div>
-          </div>
-        </div>
-        <div class="booking-card">
-          <div class="spaced-row">
-            <div class="close-row">
-              <div class="serial-no">1.</div>
-              <div class="booking-id">008-202101220090</div>
+          <div class="booking-card">
+            <div class="spaced-row">
+              <div class="close-row">
+                <div class="serial-no">1.</div>
+                <div class="booking-id">008-202101220090</div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <div class="day">24 days ago</div>
+                <div class="date">22 January 2021</div>
+              </div>
+            </div>
+            <div class="spaced-row" style="margin-left: 2rem; margin-top: 8px">
+              <div class="service">Keratine Smooth Treatement</div>
+              <div class="cost">₹2499.00</div>
             </div>
             <div
               style="
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                margin-bottom: 0.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 12px;
+                margin-left: 2rem;
+                margin-top: 8px;
               "
+              class="spaced-row"
             >
-              <div class="day">24 days ago</div>
-              <div class="date">22 January 2021</div>
+              <div class="small-green-text">Total</div>
+              <div class="small-green-text">₹2499.00</div>
             </div>
           </div>
-          <div class="spaced-row" style="margin-left: 2rem; margin-top: 8px">
-            <div class="service">Keratine Smooth Treatement</div>
-            <div class="cost">₹2499.00</div>
-          </div>
-          <div
-            style="
-              margin-top: 0.5rem;
-              margin-bottom: 12px;
-              margin-left: 2rem;
-              margin-top: 8px;
-            "
-            class="spaced-row"
-          >
-            <div class="small-green-text">Total</div>
-            <div class="small-green-text">₹2499.00</div>
-          </div>
-        </div>
-        <div class="booking-card">
-          <div class="spaced-row">
-            <div class="close-row">
-              <div class="serial-no">1.</div>
-              <div class="booking-id">008-202101220090</div>
+          <div class="booking-card">
+            <div class="spaced-row">
+              <div class="close-row">
+                <div class="serial-no">1.</div>
+                <div class="booking-id">008-202101220090</div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <div class="day">24 days ago</div>
+                <div class="date">22 January 2021</div>
+              </div>
+            </div>
+            <div class="spaced-row" style="margin-left: 2rem; margin-top: 8px">
+              <div class="service">Keratine Smooth Treatement</div>
+              <div class="cost">₹2499.00</div>
             </div>
             <div
               style="
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                margin-bottom: 0.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 12px;
+                margin-left: 2rem;
+                margin-top: 8px;
               "
+              class="spaced-row"
             >
-              <div class="day">24 days ago</div>
-              <div class="date">22 January 2021</div>
+              <div class="small-green-text">Total</div>
+              <div class="small-green-text">₹2499.00</div>
             </div>
-          </div>
-          <div class="spaced-row" style="margin-left: 2rem; margin-top: 8px">
-            <div class="service">Keratine Smooth Treatement</div>
-            <div class="cost">₹2499.00</div>
-          </div>
-          <div
-            style="
-              margin-top: 0.5rem;
-              margin-bottom: 12px;
-              margin-left: 2rem;
-              margin-top: 8px;
-            "
-            class="spaced-row"
-          >
-            <div class="small-green-text">Total</div>
-            <div class="small-green-text">₹2499.00</div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- category modal -->
     <div id="rate-card-modal" style="width: 375px !important" class="my-modal">
       <!-- tabbed section start -->
@@ -1415,7 +1429,9 @@
       >
         Continue
       </button>
-      <div class="close-btn" style="align-self: center">CLOSE</div>
+      <div class="actual-close-btn close-btn" style="align-self: center">
+        CLOSE
+      </div>
     </div>
 
     <script src="sidebar.js"></script>

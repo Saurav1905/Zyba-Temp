@@ -575,3 +575,13 @@ main {
   color: #ffaf13;
   border: solid 1px #ffaf13;
 }
+.modal-top-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.customer-history-btn {
+  cursor: pointer;
+}
