@@ -96,7 +96,10 @@ function showBookingModal() {
   console.log("nav-on");
   document.querySelector("#show-booking-modal-container").style.display =
     "flex";
-  if (document.querySelector("#show-booking-modal").style.display === "flex") {
+  if (
+    document.querySelector("#show-booking-modal-container").style.display ===
+    "flex"
+  ) {
     document.querySelector(".non-floating").style.filter =
       "brightness(50%) contrast(50%)";
     document.querySelector(".non-floating").style.backgroundColor =
