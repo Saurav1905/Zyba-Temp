@@ -175,17 +175,27 @@ function showAddEmpModal() {
     document.querySelector("html").style.overflowY = "hidden";
   }
 
-  document.addEventListener("mouseup", function (e) {
-    var container = document.querySelector("#add-emp-modal");
-    if (!container.contains(e.target)) {
+  var container = document.querySelector("#add-emp-modal");
+  container.querySelectorAll(".actual-close-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
       container.style.display = "none";
 
       document.querySelector(".non-floating").style.filter = "none";
       document.querySelector(".non-floating").style.backgroundColor = "#ffffff";
 
       document.querySelector("html").style.overflowY = "scroll";
-    }
+    });
   });
+  // document.addEventListener("mouseup", function (e) {
+  //   if (!container.contains(e.target)) {
+  //     container.style.display = "none";
+
+  //     document.querySelector(".non-floating").style.filter = "none";
+  //     document.querySelector(".non-floating").style.backgroundColor = "#ffffff";
+
+  //     document.querySelector("html").style.overflowY = "scroll";
+  //   }
+  // });
 }
 
 function showEditEmpModal() {
@@ -200,17 +210,27 @@ function showEditEmpModal() {
     document.querySelector("html").style.overflowY = "hidden";
   }
 
-  document.addEventListener("mouseup", function (e) {
-    var container = document.querySelector("#edit-emp-modal");
-    if (!container.contains(e.target)) {
+  var container = document.querySelector("#edit-emp-modal");
+  container.querySelectorAll(".actual-close-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
       container.style.display = "none";
 
       document.querySelector(".non-floating").style.filter = "none";
       document.querySelector(".non-floating").style.backgroundColor = "#ffffff";
 
       document.querySelector("html").style.overflowY = "scroll";
-    }
+    });
   });
+  // document.addEventListener("mouseup", function (e) {
+  //   if (!container.contains(e.target)) {
+  //     container.style.display = "none";
+
+  //     document.querySelector(".non-floating").style.filter = "none";
+  //     document.querySelector(".non-floating").style.backgroundColor = "#ffffff";
+
+  //     document.querySelector("html").style.overflowY = "scroll";
+  //   }
+  // });
 }
 
 function showDelEmpModal() {

@@ -156,6 +156,11 @@ main {
 .spaced-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.home-row {
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
 }
 

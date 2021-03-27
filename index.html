@@ -33,22 +33,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
@@ -65,11 +49,7 @@
     <span class="navbar-toggler-icon"></span>
   </button> -->
         <div class="w-45 nav-content">
-          <img
-            style="position: relative; left: 30px"
-            src="./assets/search.svg"
-            alt=""
-          />
+          <img class="navcontent__searchbar" src="./assets/search.svg" alt="" />
           <input
             class="form-control search"
             type="text"
@@ -79,22 +59,9 @@
           />
           <ul class="navbar-nav px-3">
             <li class="nav-item flex-wrap text-nowrap">
-              <a class="nav-link hover" href="/html/allbookings.html">
+              <a class="nav-link hover bookings" href="/html/allbookings.html">
                 <img src="./assets/all-bookings.svg" alt="" />
-                <span
-                  style="
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 21px;
-
-                    /* identical to box height */
-
-                    /* Gray 1 */
-                    color: #333333;
-                    padding: 0 0.5rem;
-                  "
-                  >All Bookings</span
-                >
+                <span class="navbar__navitem">All Bookings</span>
               </a>
             </li>
           </ul>
@@ -141,7 +108,7 @@
                   </a>
                   <div class="collapse" id="collapseExample">
                     <ul class="report-nav-list">
-                      <li class="nav-item selected">
+                      <li class="nav-item">
                         <a href="./html/sales.html">Sales</a>
                       </li>
                       <li class="nav-item">
@@ -189,8 +156,8 @@
               </div>
             </div>
 
-            <div style="width: 95%" class="spaced-row">
-              <div style="width: 50%">
+            <div class="home-row inline__home-row">
+              <div class="inline__home-rowDiv">
                 <div class="booking-heading">
                   <div class="booking-heading-text">UPCOMING BOOKINGS</div>
                   <div class="booking-heading-number">11</div>
@@ -210,7 +177,7 @@
                         <td style="font-weight: 700">Rohan Arora</td>
                         <td>Keratine Smooth Treatement</td>
                         <td>
-                          <span class="date-text">@9th Feb 2021</span><br />6:30
+                          <span class="date-text"> 9th Feb 2021</span><br />6:30
                           PM
                         </td>
                         <td>
@@ -224,10 +191,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="font-weight: 700">Rohan Arora</td>
+                        <td class="inline__trtd">Rohan Arora</td>
                         <td>Keratine Smooth Treatement</td>
                         <td>
-                          <span class="date-text">@9th Feb 2021</span><br />6:30
+                          <span class="date-text"> 9th Feb 2021</span><br />6:30
                           PM
                         </td>
                         <td>
@@ -241,10 +208,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="font-weight: 700">Rohan Arora</td>
+                        <td class="inline__trtd">Rohan Arora</td>
                         <td>Keratine Smooth Treatement</td>
                         <td>
-                          <span class="date-text">@9th Feb 2021</span><br />6:30
+                          <span class="date-text"> 9th Feb 2021</span><br />6:30
                           PM
                         </td>
                         <td>
@@ -261,7 +228,7 @@
                   </table>
                 </div>
               </div>
-              <div style="width: 50%">
+              <div class="inline__width50">
                 <div class="booking-heading">
                   <div class="booking-heading-text">PENDING BOOKINGS</div>
                   <div class="booking-heading-number">11</div>
@@ -277,10 +244,10 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td style="font-weight: 700">Rohan Arora</td>
+                      <td class="inline__trtd">Rohan Arora</td>
                       <td>Keratine Smooth Treatement</td>
                       <td>
-                        <span class="date-text">@9th Feb 2021</span><br />6:30
+                        <span class="date-text"> 9th Feb 2021</span><br />6:30
                         PM
                       </td>
                       <td>
@@ -294,10 +261,10 @@
                       </td>
                     </tr>
                     <tr>
-                      <td style="font-weight: 700">Rohan Arora</td>
+                      <td class="inline__trtd">Rohan Arora</td>
                       <td>Keratine Smooth Treatement</td>
                       <td>
-                        <span class="date-text">@9th Feb 2021</span><br />6:30
+                        <span class="date-text"> 9th Feb 2021</span><br />6:30
                         PM
                       </td>
                       <td>
@@ -314,7 +281,7 @@
                       <td style="font-weight: 700">Rohan Arora</td>
                       <td>Keratine Smooth Treatement</td>
                       <td>
-                        <span class="date-text">@9th Feb 2021</span><br />6:30
+                        <span class="date-text"> 9th Feb 2021</span><br />6:30
                         PM
                       </td>
                       <td>
@@ -332,7 +299,7 @@
               </div>
             </div>
 
-            <div style="width: 97.5%">
+            <div class="inline__width97">
               <div class="booking-heading">
                 <div class="booking-heading-text">COMPLETED BOOKINGS</div>
                 <div class="booking-heading-number">11</div>
@@ -352,7 +319,7 @@
                     <td style="font-weight: 700">Rohan Arora</td>
                     <td>Keratine Smooth Treatement</td>
                     <td>
-                      <span class="date-text">@9th Feb 2021</span><br />6:30 PM
+                      <span class="date-text"> 9th Feb 2021</span><br />6:30 PM
                     </td>
                     <td
                       style="
@@ -380,7 +347,7 @@
                     <td style="font-weight: 700">Rohan Arora</td>
                     <td>Keratine Smooth Treatement</td>
                     <td>
-                      <span class="date-text">@9th Feb 2021</span><br />6:30 PM
+                      <span class="date-text"> 9th Feb 2021</span><br />6:30 PM
                     </td>
                     <td
                       style="
@@ -408,7 +375,7 @@
                     <td style="font-weight: 700">Rohan Arora</td>
                     <td>Keratine Smooth Treatement</td>
                     <td>
-                      <span class="date-text">@9th Feb 2021</span><br />6:30 PM
+                      <span class="date-text"> 9th Feb 2021</span><br />6:30 PM
                     </td>
                     <td
                       style="
@@ -446,7 +413,7 @@
     <!-- new booking modal -->
     <div id="new-booking-modal" class="my-modal">
       <div class="modal-top-container">
-        <div style="margin-top: 0" class="booking-heading modal-heading">
+        <div class="booking-heading modal-heading inline__mtop0">
           <div class="booking-heading-text">New bookings</div>
         </div>
         <div class="actual-close-btn close-btn">CLOSE</div>
@@ -464,8 +431,7 @@
       >
         <button
           type="button"
-          class="btn btn-outline-primary time-btn modal-btn"
-          style="margin-left: 0"
+          class="btn btn-outline-primary time-btn modal-btn inline__mleft0"
         >
           30 Jan
         </button>
@@ -518,9 +484,8 @@
         </div>
       </div>
       <button
-        style="width: 366px; height: 54px; margin: 16px 0 !important"
         type="button"
-        class="btn btn-primary yellow-btn"
+        class="btn btn-primary yellow-btn inline__continueBtn"
       >
         Continue
       </button>
@@ -670,6 +635,7 @@
                     font-size: 8px;
                     line-height: 10px;
                   "
+                  onclick="chooseProfModal()"
                 >
                   <img
                     style="margin-bottom: 3px"
@@ -703,7 +669,7 @@
           type="button"
           class="btn btn-outline-primary add-a-service"
         >
-          <img src="./assets/plus-circle.svg" alt="" />
+          <img alt="" />
           ADD A SERVICE
         </button>
 
