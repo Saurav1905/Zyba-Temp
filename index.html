@@ -614,7 +614,7 @@
                 </button>
                 <div class="staff-slot-container">
                   <p class="staff-slot-name">
-                    Rohan Arrora <span> (Edit) </span>
+                    Rohan Arora <span> (Edit) </span>
                   </p>
                   <p class="staff-slot-time">10:00AM - 10:30AM</p>
                 </div>
@@ -701,7 +701,13 @@
             <div class="bill-text">Service Total</div>
             <div class="bill-cost">₹1000</div>
           </div>
-
+          <div class="spaced-row" style="margin-bottom: 8px">
+            <div class="bill-text">Discount</div>
+            <div class="bill-cost dicount-text">
+              <span class="red-text remove-text">Remove </span>
+              -₹300
+            </div>
+          </div>
           <div class="spaced-row" style="margin-bottom: 8px">
             <div class="bill-text">Tax Total</div>
             <div class="bill-cost">₹0</div>
@@ -712,71 +718,24 @@
           <div class="bill-final">₹1000</div>
         </div>
 
-        <div class="spaced-row">
-          <table
-            style="
-              margin: 0;
-              padding: 0;
-              padding: 0 !important;
-              margin-top: 35px;
-            "
-            class="table-borderless full-table"
-          >
-            <thead>
-              <tr>
-                <th class="red-text" scope="col">ONLINE PAID</th>
-                <!-- <th class="red-text" scope="col">TO BE COLLECTED</th> -->
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="margin-top: 8px !important">
-                <td
-                  style="
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 21px;
-
-                    /* Gray 1 */
-                    color: #333333;
-                    padding: 0;
-                    padding-top: 16px !important;
-                  "
-                >
-                  ₹300
-                </td>
-                <!-- <td
-                style="
-                  background: rgba(33, 150, 83, 0.1);
-                  border-radius: 8px;
-                  text-align: left;
-                  padding: 8px;
-                  width: 116px;
-                  padding-top: 8px !important;
-                  margin-top: 8px !important;
-                "
-                class="green-text"
-              >
-                ₹700
-              </td> -->
-              </tr>
-            </tbody>
-          </table>
-          <div
-            style="
-              background: rgba(33, 150, 83, 0.1);
-              border-radius: 8px;
-              padding: 8px;
-              align-self: baseline;
-              margin-bottom: 24px;
-              position: relative;
-              top: 28px;
-              white-space: nowrap;
-            "
-          >
+        <div class="spaced-row discount-section">
+          <div class="info-block online-paid">
+            <div style="margin-bottom: 12px" class="red-text">ONLINE PAID</div>
+            <div>₹300</div>
+          </div>
+          <div class="info-block to-be-collected">
             <div style="margin-bottom: 12px" class="red-text">
-              LIFE TIME VALUE
+              TO BE COLLECTED
             </div>
-            <div class="green-text">₹700</div>
+            <div>₹700</div>
+          </div>
+          <div class="info-block new-total">
+            <div style="margin-bottom: 12px" class="red-text">NEW TOTAL</div>
+            <div>₹550</div>
+          </div>
+          <div class="discount-inputs">
+            <input type="text" placeholder="INR" />
+            <input type="text" placeholder="%" />
           </div>
           <button
             style="white-space: nowrap"
@@ -784,6 +743,13 @@
             class="btn btn-outline-primary add-disc-btn"
           >
             Add Discount
+          </button>
+          <button
+            style="white-space: nowrap"
+            type="button"
+            class="btn btn-outline-primary edit-disc-btn"
+          >
+            Edit Discount
           </button>
         </div>
 
@@ -871,7 +837,7 @@
           <div class="close-btn">TIMETABLE</div>
         </div>
         <div
-          class="btn-group"
+          class=""
           role="group2"
           aria-label="Basic example"
           style="align-self: baseline"
@@ -882,6 +848,7 @@
               width: 104px;
               height: 38px;
               margin: 0;
+              margin-bottom: 8px;
               margin-right: 8px;
               white-space: nowrap;
             "
@@ -893,6 +860,7 @@
           <button
             style="
               width: 104px;
+              margin-bottom: 8px;
               height: 38px;
               margin: 0;
               margin-right: 8px;
@@ -907,7 +875,92 @@
             style="
               width: 104px;
               height: 38px;
+              margin-bottom: 8px;
               margin: 0;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              margin-bottom: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              margin-bottom: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+        </div>
+        <div style="width: 100%" class="spaced-row">
+          <div class="modal-heading" style="display: flex">
+            <img src="./assets/user.svg" alt="" />
+            <div class="booking-heading-text">Rohan Arora</div>
+          </div>
+          <div class="close-btn">TIMETABLE</div>
+        </div>
+        <div
+          class=""
+          role="group2"
+          aria-label="Basic example"
+          style="align-self: baseline"
+        >
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-right: 8px;
+              margin-bottom: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-bottom: 8px;
+              margin-right: 8px;
+              white-space: nowrap;
+            "
+            type="button"
+            class="btn btn-outline-primary time-btn"
+          >
+            06:00 PM
+          </button>
+          <button
+            style="
+              width: 104px;
+              height: 38px;
+              margin: 0;
+              margin-bottom: 8px;
               margin-right: 8px;
               white-space: nowrap;
             "
@@ -925,7 +978,7 @@
           <div class="close-btn">TIMETABLE</div>
         </div>
         <div
-          class="btn-group"
+          class=""
           role="group2"
           aria-label="Basic example"
           style="align-self: baseline"
@@ -934,6 +987,7 @@
             style="
               width: 104px;
               height: 38px;
+              margin-bottom: 8px;
               margin: 0;
               margin-right: 8px;
               white-space: nowrap;
@@ -946,6 +1000,7 @@
           <button
             style="
               width: 104px;
+              margin-bottom: 8px;
               height: 38px;
               margin: 0;
               margin-right: 8px;
@@ -961,59 +1016,7 @@
               width: 104px;
               height: 38px;
               margin: 0;
-              margin-right: 8px;
-              white-space: nowrap;
-            "
-            type="button"
-            class="btn btn-outline-primary time-btn"
-          >
-            06:00 PM
-          </button>
-        </div>
-        <div style="width: 100%" class="spaced-row">
-          <div class="modal-heading" style="display: flex">
-            <img src="./assets/user.svg" alt="" />
-            <div class="booking-heading-text">Rohan Arora</div>
-          </div>
-          <div class="close-btn">TIMETABLE</div>
-        </div>
-        <div
-          class="btn-group"
-          role="group2"
-          aria-label="Basic example"
-          style="align-self: baseline"
-        >
-          <button
-            style="
-              width: 104px;
-              height: 38px;
-              margin: 0;
-              margin-right: 8px;
-              white-space: nowrap;
-            "
-            type="button"
-            class="btn btn-outline-primary time-btn"
-          >
-            06:00 PM
-          </button>
-          <button
-            style="
-              width: 104px;
-              height: 38px;
-              margin: 0;
-              margin-right: 8px;
-              white-space: nowrap;
-            "
-            type="button"
-            class="btn btn-outline-primary time-btn"
-          >
-            06:00 PM
-          </button>
-          <button
-            style="
-              width: 104px;
-              height: 38px;
-              margin: 0;
+              margin-bottom: 8px;
               margin-right: 8px;
               white-space: nowrap;
             "

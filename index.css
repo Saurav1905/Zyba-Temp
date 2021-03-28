@@ -474,7 +474,8 @@ main {
   color: #219653;
 }
 
-.add-disc-btn {
+.add-disc-btn,
+.edit-disc-btn {
   width: 94px;
   height: 32px;
   font-weight: 500;

@@ -278,8 +278,8 @@ td {
 }
 #show-booking-modal-container {
   position: fixed;
-  top: 25%;
-  left: 30%;
+  top: 25vh;
+  left: 25vw;
   gap: 1rem;
   display: flex;
   display: none;
@@ -579,4 +579,108 @@ td {
 .staff-slot-time {
   font-size: 10px;
   margin-bottom: 0;
+}
+
+.discount-section .discount-inputs {
+  display: none;
+}
+.discount-section.show-inputs .discount-inputs {
+  width: 106px;
+  display: block;
+  margin-top: 22px;
+}
+
+.discount-section.show-inputs .discount-inputs input {
+  width: 106px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 4px;
+  text-align: right;
+  padding-right: 10px;
+  border: none;
+  border-bottom: 1px solid #828282;
+}
+
+.discount-section.show-inputs .discount-inputs input:focus {
+  border: 1px solid #828282;
+  outline: 0;
+  border-radius: 4px;
+}
+
+.discount-section {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.discount-section .info-block {
+  border-radius: 8px;
+  padding: 8px;
+  align-self: baseline;
+  margin-bottom: 24px;
+  position: relative;
+  top: 28px;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+.remove-text {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.discount-section.show-inputs .online-paid {
+  display: none;
+}
+.discount-section .to-be-collected,
+.discount-section.discount-present .to-be-collected {
+  background: rgba(33, 150, 83, 0.1);
+  color: #219653;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  min-width: 116px;
+}
+
+.dicount-text {
+  color: #333333 !important;
+}
+
+.discount-section.show-inputs .to-be-collected {
+  background: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.discount-section .new-total {
+  display: none;
+}
+
+.discount-section.show-inputs .new-total {
+  background: rgba(33, 150, 83, 0.1);
+  color: #219653;
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.discount-section.discount-present .add-disc-btn {
+  display: none;
+}
+
+.discount-section.discount-present .edit-disc-btn {
+  display: inherit;
+}
+
+.discount-section .edit-disc-btn {
+  display: none;
+}
+.discount-section.show-inputs .add-disc-btn,
+.discount-section.discount-present .add-disc-btn {
+  display: none;
 }
