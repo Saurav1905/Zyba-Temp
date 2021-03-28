@@ -593,7 +593,9 @@
               <th class="red-text" scope="col" style="width: 142px">
                 Service name
               </th>
-              <th class="red-text" scope="col" style="width: 142px">Staff</th>
+              <th class="red-text" scope="col" style="width: 142px">
+                Staff / Slot
+              </th>
               <th class="red-text" scope="col">ACTION</th>
             </tr>
           </thead>
@@ -605,11 +607,17 @@
               <td style="padding: 15px 0 8px 0; font-weight: 400">
                 <button
                   type="button"
-                  class="btn btn-outline-primary choose-time-btn"
+                  class="btn hidden btn-outline-primary choose-time-btn"
                   onclick="chooseProfModal()"
                 >
                   Choose Time
                 </button>
+                <div class="staff-slot-container">
+                  <p class="staff-slot-name">
+                    Rohan Arrora <span> (Edit) </span>
+                  </p>
+                  <p class="staff-slot-time">10:00AM - 10:30AM</p>
+                </div>
               </td>
               <td
                 style="
@@ -620,7 +628,11 @@
                 "
                 class="spaced-row"
               >
-                <div style="margin: 0.5rem">
+                <div
+                  class="charges-btn"
+                  onclick="toggleChargesWindow()"
+                  style="margin: 0.5rem"
+                >
                   <img
                     style="margin-bottom: 3px"
                     src="./assets/charges.svg"
@@ -672,7 +684,7 @@
           <img alt="" />
           ADD A SERVICE
         </button>
-        <div class="charge-container">
+        <div class="charge-container hidden">
           <label class="charge-label" for="charge-input">Extra Charges</label>
           <input id="charge-input" type="text" class="charge-input" />
           <button class="btn add-charge-btn">Add</button>

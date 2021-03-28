@@ -566,3 +566,17 @@ td {
 .hidden {
   display: none;
 }
+
+.staff-slot-name {
+  font-weight: 700;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.staff-slot-name span {
+  color: #df5050;
+}
+.staff-slot-time {
+  font-size: 10px;
+  margin-bottom: 0;
+}
