@@ -278,8 +278,8 @@ td {
 }
 #show-booking-modal-container {
   position: fixed;
-  top: 25%;
-  left: 30%;
+  bottom: 10vh;
+  left: 22vw;
   gap: 1rem;
   display: flex;
   display: none;

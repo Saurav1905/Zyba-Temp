@@ -494,60 +494,28 @@
       <!-- booking modal -->
       <div
         id="show-booking-modal"
-        class="sub-modal billing-modal"
-        style="padding-right: 0"
+        class="sub-modal billing-modal inline__pad0"
       >
-        <div style="width: 100%; margin-bottom: 24px" class="spaced-row">
+        <div class="spaced-row inline__sub-modal">
           <div class="col">
-            <div class="spaced-row" style="width: 90%">
+            <div class="spaced-row inline__width90" >
               <div class="modal-name">Rohan Arora</div>
               <div class="actual-close-btn close-btn">CLOSE</div>
             </div>
-            <div class="spaced-row" style="width: 90%">
+            <div class="spaced-row inline__width90" >
               <div>
                 <img src="../assets/phone.svg" alt="" /><span
-                  style="
-                    font-weight: normal;
-                    font-size: 10px;
-                    line-height: 13px;
-
-                    /* Gray 1 */
-                    color: #333333;
-                    margin-left: 8px;
-                  "
+                  class="inline__spaced-rowspan"
                 >
                   8717900010
                 </span>
               </div>
               <div
-                class="customer-history-btn"
-                style="
-                  background: rgba(255, 175, 19, 0.25);
-                  border-radius: 4px;
-                  display: flex;
-                  justify-content: center;
-                  padding: 6px;
-                "
+                class="customer-history-btn inline__customer-history-btn"
               >
                 <img src="../assets/calendar.svg" alt="" /><span
-                  style="
-                    font-weight: 500;
-                    font-size: 10px;
-                    line-height: 13px;
-
-                    /* identical to box height */
-                    display: flex;
-                    align-items: center;
-
-                    /* Gray 1 */
-                    color: #333333;
-
-                    /* Inside Auto Layout */
-                    flex: none;
-                    order: 1;
-                    flex-grow: 0;
-                    margin: 0px 8px;
-                  "
+                class="inline__customer-history-img"
+                 
                 >
                   Customer History
                 </span>
@@ -556,13 +524,7 @@
           </div>
         </div>
         <table
-          style="
-            margin: 0;
-            padding: 0;
-            padding: 0 !important;
-            border-bottom: 1px solid #f2f2f2;
-          "
-          class="table-borderless full-table"
+          class="table-borderless inline__table-borderless full-table"
         >
           <thead>
             <tr>
@@ -573,10 +535,10 @@
           </thead>
           <tbody>
             <tr>
-              <td style="padding: 16px 0; font-weight: 400">005-2021020962</td>
-              <td style="padding: 16px 0; font-weight: 400">10 Feb 2021</td>
+              <td class="inline__tdpadfw" >005-2021020962</td>
+              <td   class="inline__tdpadfw"  >10 Feb 2021</td>
               <td
-                style="white-space: nowrap; padding: 16px 0; font-weight: 400"
+              class="inline__wsnrap"
               >
                 10:00 AM - 10:30 AM
               </td>
@@ -585,24 +547,23 @@
         </table>
 
         <table
-          style="margin: 0; margin-top: 8px; padding: 0"
-          class="table-borderless full-table"
+          class="table-borderless inline__table-borderless full-table"
         >
           <thead>
             <tr>
-              <th class="red-text" scope="col" style="width: 142px">
+              <th class="red-text inline__w142" scope="col">
                 Service name
               </th>
-              <th class="red-text" scope="col" style="width: 142px">Staff</th>
+              <th class="red-text inline__w142" scope="col">Staff</th>
               <th class="red-text" scope="col">ACTION</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="padding: 15px 0 8px 0; font-weight: 400">
+              <td class="inline__keratine" >
                 Keratine Smooth Treatement
               </td>
-              <td style="padding: 15px 0 8px 0; font-weight: 400">
+              <td class="inline__keratine" >
                 <button
                   type="button"
                   class="btn btn-outline-primary choose-time-btn"
@@ -612,48 +573,32 @@
                 </button>
               </td>
               <td
-                style="
-                  padding: 15px 0 8px 0;
-                  text-align: center;
-                  font-size: 8px;
-                  line-height: 10px;
-                "
-                class="spaced-row"
+                class="spaced-row inline__spaced-row"
               >
-                <div style="margin: 0.5rem">
+                <div class="inline__marginhalf" >
                   <img
-                    style="margin-bottom: 3px"
+                    class="inline__m3px"
                     src="./assets/charges.svg"
                     alt=""
                   />
                   Charges
                 </div>
                 <div
-                  style="
-                    margin: 0.5rem;
-                    text-align: center;
-                    font-size: 8px;
-                    line-height: 10px;
-                  "
+                 class="inline__mhalftacent"
                   onclick="chooseProfModal()"
                 >
                   <img
-                    style="margin-bottom: 3px"
+                    class="inline__m3px"
                     src="./assets/time.svg"
                     alt=""
                   />
                   Time
                 </div>
                 <div
-                  style="
-                    margin: 0.5rem;
-                    text-align: center;
-                    font-size: 8px;
-                    line-height: 10px;
-                  "
+                class="inline__mhalftacent"
                 >
                   <img
-                    style="margin-bottom: 3px"
+                  class="inline__m3px"
                     src="./assets/remove.svg"
                     alt=""
                   />
@@ -665,45 +610,35 @@
         </table>
 
         <button
-          style="margin-bottom: 1rem"
           type="button"
-          class="btn btn-outline-primary add-a-service"
+          class="btn btn-outline-primary add-a-service inline__m1rem"
         >
           <img alt="" />
           ADD A SERVICE
         </button>
 
         <div
-          style="
-            width: 90%;
-            margin-bottom: 8px;
-            border-bottom: 1px solid #f2f2f2;
-          "
+          class="inline__w90mb8px"
         >
-          <div class="spaced-row" style="margin-bottom: 8px">
+          <div class="spaced-row inline__mb8 ">
             <div class="bill-text">Service Total</div>
             <div class="bill-cost">₹1000</div>
           </div>
 
-          <div class="spaced-row" style="margin-bottom: 8px">
+          <div class="spaced-row inline__mb8">
             <div class="bill-text">Tax Total</div>
             <div class="bill-cost">₹0</div>
           </div>
         </div>
-        <div class="spaced-row" style="width: 90%">
+        <div class="spaced-row inline__w90cent" >
           <div class="bill-amount">Amount</div>
           <div class="bill-final">₹1000</div>
         </div>
 
         <div class="spaced-row">
           <table
-            style="
-              margin: 0;
-              padding: 0;
-              padding: 0 !important;
-              margin-top: 35px;
-            "
-            class="table-borderless full-table"
+          
+            class="table-borderless full-table inline__spacedRowtb"
           >
             <thead>
               <tr>
@@ -712,18 +647,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr style="margin-top: 8px !important">
+              <tr class="inline__mt8pximp">
                 <td
-                  style="
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 21px;
-
-                    /* Gray 1 */
-                    color: #333333;
-                    padding: 0;
-                    padding-top: 16px !important;
-                  "
                 >
                   ₹300
                 </td>
@@ -745,18 +670,9 @@
             </tbody>
           </table>
           <div
-            style="
-              background: rgba(33, 150, 83, 0.1);
-              border-radius: 8px;
-              padding: 8px;
-              align-self: baseline;
-              margin-bottom: 24px;
-              position: relative;
-              top: 28px;
-              white-space: nowrap;
-            "
+          class="inline__bgbrpad"
           >
-            <div style="margin-bottom: 12px" class="red-text">
+            <div class="red-text inline__mb12px">
               LIFE TIME VALUE
             </div>
             <div class="green-text">₹700</div>
@@ -772,19 +688,9 @@
 
         <div style="width: 100%" class="spaced-row">
           <button
-            style="
-              width: 50%;
-              height: 40px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin: 0;
-              margin-top: 32px;
-              outline: none;
-              border: 0;
-            "
+         
             type="button"
-            class="btn btn-primary yellow-btn"
+            class="btn btn-primary yellow-btn inline__yellow-btn"
           >
             Create
           </button>

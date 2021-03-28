@@ -653,3 +653,149 @@ main {
   height: 54px;
   margin: 16px 0 !important;
 }
+.inline__padr0 {
+  padding-right: 0;
+}
+.inline__sub-modal {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.inline__width90 {
+  width: 90%;
+}
+.inline__spaced-rowspan {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+
+  /* Gray 1 */
+  color: #333333;
+  margin-left: 8px;
+}
+.inline__customer-history-btn {
+  background: rgba(255, 175, 19, 0.25);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+}
+.inline__customer-history-img {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* Gray 1 */
+  color: #333333;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+.inline__table-borderless {
+  margin: 0;
+  padding: 0;
+  padding: 0 !important;
+  border-bottom: 1px solid #f2f2f2;
+}
+.inline__tdpadfw {
+  padding: 16px 0;
+  font-weight: 400;
+}
+.inline__wsnrap {
+  white-space: nowrap;
+  padding: 16px 0;
+  font-weight: 400;
+}
+.inline__table-borderless {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+.inline__w142 {
+  width: 142px;
+}
+.inline__keratine {
+  padding: 15px 0 8px 0;
+  font-weight: 400;
+}
+.inline__spaced-row {
+  padding: 15px 0 8px 0;
+  text-align: center;
+  font-size: 8px;
+  line-height: 10px;
+}
+.inline__marginhalf {
+  margin: 0.5rem;
+}
+.inline__m3px {
+  margin-bottom: 3px;
+}
+.inline__mhalftacent {
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 8px;
+  line-height: 10px;
+}
+.inline__m1rem {
+  margin-bottom: 1rem;
+}
+.inline__w90mb8px {
+  width: 90%;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.inline__mb8 {
+  margin-bottom: 8px;
+}
+.inline__w90cent {
+  width: 90%;
+}
+.inline__spacedRowtb {
+  margin: 0;
+  padding: 0;
+  padding: 0 !important;
+  margin-top: 35px;
+}
+.inline__mt8pximp {
+  margin-top: 8px !important;
+}
+.inline__fwfslh {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  /* Gray 1 */
+  color: #333333;
+  padding: 0;
+  padding-top: 16px !important;
+}
+.inline__bgbrpad {
+  background: rgba(33, 150, 83, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+  align-self: baseline;
+  margin-bottom: 24px;
+  position: relative;
+  top: 28px;
+  white-space: nowrap;
+}
+.inline__mb12px {
+  margin-bottom: 12px;
+}
+.inline__yellow-btn {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: 32px;
+  outline: none;
+  border: 0;
+}
