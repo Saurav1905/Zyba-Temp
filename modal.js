@@ -259,3 +259,7 @@ function showDelEmpModal() {
     }
   });
 }
+
+function toggleChargesWindow() {
+  document.querySelector(".charge-container").classList.toggle("hidden");
+}
