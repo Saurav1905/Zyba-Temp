@@ -513,3 +513,56 @@ td {
   align-items: center;
   justify-content: flex-start;
 }
+
+.charge-label {
+  color: #4f4f4f;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.charge-input {
+  width: 90px;
+  height: 31px;
+  background-color: #f2f2f2;
+  color: #4f4f4f;
+  border: none;
+  text-align: right;
+  padding: 16px;
+  margin: 0 8px;
+  border-radius: 4px;
+}
+.charge-container {
+  align-self: center;
+}
+.charge-input:focus,
+.charge-input:active {
+  outline: none;
+}
+
+.add-charge-btn {
+  color: white;
+  width: 58px;
+  height: 24px;
+  padding: 3px;
+  background-color: #ffaf13 !important;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.remove-charge-btn {
+  color: white;
+  background-color: #df5050 !important;
+  width: 58px;
+  padding: 3px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.hidden {
+  display: none;
+}
